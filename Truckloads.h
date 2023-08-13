@@ -8,7 +8,7 @@ class Truckloads{
         int numTrucks(int numCrates, int loadSize);
 
 
-}
+};
 
 
 #endif

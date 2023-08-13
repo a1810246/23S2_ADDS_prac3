@@ -7,6 +7,6 @@ class Reverser{
         Reverser();
         int reverseDigit(int value);
         string reverseString(string characters);
-}
+};
 
 #endif
