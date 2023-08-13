@@ -1,6 +1,7 @@
 #ifndef REVERSER_H
 #define REVERSER_H
 #include<string>
+#include <cmath>
 
 class Reverser{
     public:
