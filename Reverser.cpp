@@ -1,13 +1,23 @@
 #include"Reverser.h"
 using namespace std;
 
+Reverser::Reverser()
+{
+
+}
+
 int Reverser::reverseDigit(int value){
-    if(value<0)return -1;
+    if(value<0)
+    {
+        return -1;
+    }
+
     int n=0;
     int len=value;
+
     while(len){
         n++;
-        len/=10;
+        len = len/10;
     }
     if(n==0){
         return value;
