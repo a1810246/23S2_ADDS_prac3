@@ -7,7 +7,7 @@ Reverser::Reverser()
 }
 
 int Reverser::reverseDigit(int value){
-    if(value<0)
+    if(value < 0)
     {
         return -1;
     }
@@ -19,7 +19,7 @@ int Reverser::reverseDigit(int value){
         n++;
         len = len/10;
     }
-    if(n==0){
+    if(n == 0){
         return value;
     }
     else {
@@ -29,7 +29,17 @@ int Reverser::reverseDigit(int value){
 
 string Reverser::reverseString(string characters){
     int len = characters.length();
-    if(len<1)return "ERROR";
-    if(len==1)return characters;
-    else return reverseString(characters.substr(1))+characters.substr(0,1);
+    if(len < 1)
+    {
+        return "ERROR";
+    }
+
+    if(len == 1)
+    {
+        return characters;
+    }
+    else
+    {
+        return reverseString(characters.substr(1))+characters.substr(0,1);
+    }
 }
